@@ -21,3 +21,10 @@ val temperature = 10<br>
 val isHot = if (temperature > 50) true else false<br>
 println(isHot)
 <br><br>
+Use the value of an expression in a string template. Add some code to check the temperature to determine whether a fish is safe or too warm, then run your program.
+<br><br>
+val temperature = 10<br>
+val message = "The water temperature is ${ if (temperature > 50) "too warm" else "OK" }."<br>
+println(message)
+<br><br>
+Note: Loops are exceptions to "everything has a value." There's no sensible value for for loops or while loops, so they do not have values. If you try to assign a loop's value to something, the compiler gives an error.

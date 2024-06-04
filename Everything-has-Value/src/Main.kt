@@ -16,6 +16,9 @@ fun main(){
     val isHot2 = temperature2 > 50
     println(isHot2)
 
-
+    println("\n\n\n")
+    val temperature3 = 10
+    val message = "The water temperature is ${ if (temperature3 > 50) "too warm" else "OK" }."
+    println(message)
 
 }
